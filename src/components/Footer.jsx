@@ -30,8 +30,6 @@ export default function Footer() {
                     <p style={{ fontSize: "15px", marginBottom: "15px" }}>Kirtan | Priyanshu</p>
                     <a style={{ backgroundColor: "black", padding: "4px", fontSize: "15px", borderRadius: "5px" }} target='_blank' href="https://github.com/krishsunny9876-sudo">GitHub</a>
                 </div>
-
-
             </div>
         </div>
     )
