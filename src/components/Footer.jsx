@@ -28,7 +28,7 @@ export default function Footer() {
                 <div style={{ color: "white", height: "100%" }}>
                     <p style={{ fontSize: "15px" }}>Our Devs.</p>
                     <p style={{ fontSize: "15px", marginBottom: "15px" }}>Kirtan | Priyanshu</p>
-                    <a style={{ backgroundColor: "black", padding: "4px", fontSize: "15px", borderRadius: "5px" }} target='_blank' href="https://github.com/krishsunny9876-sudo">GitHub</a>
+                    <a style={{ backgroundColor: "black", padding: "4px", fontSize: "15px", borderRadius: "5px" }} target='_blank' href="https://github.com/krishsunny9876-sudo">Github</a>
                 </div>
             </div>
         </div>
