@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+.font_2 {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 .font_1 {
     font-family: "Lilita One", sans-serif;
@@ -46,6 +53,18 @@ button {
     font-weight: bold;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.558);
 }
+.button3{
+     background: linear-gradient(to right, #214ca2, #2d6cdf);
+    color: white;
+    border: none;
+    padding: 9px 40px;
+    margin-top: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.558);
+}
 
 button:hover {
     background: #1f52aa;
@@ -72,6 +91,17 @@ button:hover {
     margin-top: 10px;
 }
 
-.link:hover{
+.link:hover {
     color: red;
+}
+
+.link2 {
+    transition: all .3s ease-in-out;
+}
+
+.link2:hover {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.279);
+    transform: translateY(-15%);
 }

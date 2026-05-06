@@ -13,7 +13,7 @@ export default function App() {
   const [data, setData] = useState(null)
   const [originalData, setOriginalData] = useState(null)
   const [loading, setLoading] = useState(false)
-  const [dataLoaded, setDataLoaded] = useState(false);
+  const [dataLoaded, setDataLoaded] = useState(true);
 
   const handleAnalyze = async (text) => {
     if (!text || text.trim() == '') { return }
@@ -22,12 +22,12 @@ export default function App() {
     const result = await analyzeBlog(text.trim())
     setData(result)
     setLoading(false)
-    setDataLoaded(true)
+    setDataLoaded(false)
   }
 
   const userContext = useContext(UserContext);
   useEffect(() => {
-    userContext.setIsFooterabsolute(!(dataLoaded));
+    userContext?.setIsFooterabsolute(dataLoaded);
   }, [dataLoaded])
 
   return (

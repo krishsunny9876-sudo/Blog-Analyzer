@@ -4,7 +4,7 @@ import { UserContext } from '../RouterConnect';
 export default function About() {
     const userContext = useContext(UserContext);
     useEffect(() => {
-        userContext.setIsFooterabsolute(true);
+        userContext?.setIsFooterabsolute(true);
     })
     return (
         <div style={{ marginTop: "60px" }}>
