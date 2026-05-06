@@ -25,7 +25,6 @@ export default function App() {
   return (
     <div className="container">
 
-      <apiRQST />
       <Navbar />
       <BlogInput onAnalyze={handleAnalyze} isdisabled={loading} />
 
