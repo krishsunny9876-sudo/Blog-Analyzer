@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <div className='homes'>
       <h1 className='font_2' style={{ fontWeight: "bold", fontSize: "35px" }}>Welcome to TrueWrite<span className='font_2' style={{ color: "red" }}>AI</span></h1>
-      <h1 style={{ fontWeight: "bold", fontSize: "30px" }}>Understand Your Blog</h1>
-      <h1 className='homesHeading' style={{ fontWeight: "bold", fontSize: "30px", marginBottom: "20px" }}>Improve Your Impact</h1>
+      <h1 style={{ fontWeight: "bold", fontSize: "30px" }}>"Understand Your Blog</h1>
+      <h1 className='homesHeading' style={{ fontWeight: "bold", fontSize: "30px", marginBottom: "20px" }}>Improve Your Impact"</h1>
       <p>Analyze your blog content for readablity , ai-detection , structure and more.</p>
       <p>Get insights that help you to write better and rank higher.</p>
 
-      <button className='button3' onClick={()=>navigate("/main")}>Analyze Your Blog &rarr;</button>
+      <button className='button3' onClick={() => navigate("/main")}>Analyze Your Blog &rarr;</button>
 
     </div>
   )
