@@ -6,7 +6,7 @@ export default function ComparisonView({ original, improved }) {
     return (
         <>
             <div className="headdiv headings" style={{ marginLeft: "25px" }}>
-                <h3 >Original vs Improved Content</h3>
+                <h3 className="font-bold">Original vs Improved Content</h3>
                 <div className="straightLine">
                 </div>
             </div>

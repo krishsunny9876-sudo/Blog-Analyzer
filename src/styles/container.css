@@ -52,22 +52,26 @@ button:hover {
 }
 
 .card {
-    background: rgb(255, 255, 255);
+    background-color: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    border: 6px solid rgb(186, 224, 255);
+    outline: 2px solid rgb(74, 129, 174);
     margin: 20px;
 }
 
 .card2 {
-    background: #e5efff;
+    background: #ebf3ff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid gray;
     margin: 20px;
 }
 
 .hrTag {
     border-color: rgba(115, 115, 115, 0.218);
     margin-top: 10px;
+}
+
+.link:hover{
+    color: red;
 }

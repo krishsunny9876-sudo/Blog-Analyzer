@@ -14,10 +14,23 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-image: url(../assets/images/AI-BG.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.body2 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.484); */
+    background: radial-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0));
+    top: 0px;
+    left: 0px;
 }
 
 .container {
-    background: #e5efff;
+    background: #6dc5ff76;
     width: 80vw;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -159,6 +172,7 @@ textarea {
     z-index: 2;
     top: 0px;
     left: 0px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.473);
 }
 
 .highlighted {
@@ -215,4 +229,22 @@ textarea {
     height: 100px;
     margin-top: 20px;
     transform: translateX(-20%);
+}
+
+
+/*Footer___________________________________________________________________________________________________________________________________________________________________*/
+.footerDiv {
+    width: 100%;
+    min-height: 120px;
+    background-image: url(../assets/images/navbar-BG.jpg);
+    background-size: cover;
+    clip-path: polygon(0% 60%, 9.5% 0, 90.5% 0, 100% 60%, 100% 100%, 0% 100%);
+    text-align: center;
+    align-content: center;
+}
+
+.footer_absolute {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 }
