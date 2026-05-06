@@ -1,9 +1,12 @@
+import { useRef } from "react";
 import "../styles/main.css"
 import { FaCopy } from "react-icons/fa";
 
 export default function FixedOutput({ fixed }) {
+    const fixedRef = useRef();
     const handleCopy = () => {
-        navigator.clipboard.writeText(fixed ? fixed : "No data");
+        fixedRef.current?.select();
+        navigator.clipboard.writeText(fixed ? fixed : "");
         console.log("Copied!");
     };
 
@@ -12,8 +15,19 @@ export default function FixedOutput({ fixed }) {
             <h3>Fixed Content</h3>
             <hr className="hrTag" />
             <div className="fixedTextArea">
-                <p style={{ lineHeight: "25px" }}>{fixed && fixed}</p>
-                <button onClick={handleCopy}><FaCopy /> Copy</button>
+                <textarea
+                    type="text"
+                    style={{ lineHeight: "25px", border: "none", outline: "none", resize: "none" }}
+                    ref={fixedRef}
+                    value={fixed && fixed}
+                    readOnly
+                />
+                <button
+                    onClick={handleCopy}
+                    style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                    <FaCopy style={{ marginRight: "5px" }} />
+                    Copy
+                </button>
             </div>
         </div>
     );

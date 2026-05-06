@@ -7,7 +7,7 @@ import Loadings from "./components/loading"
 import { analyzeBlog } from "./api"
 import "./styles/main.css"
 
-export default function App() { 
+export default function App() {
 
   const [data, setData] = useState(null)
   const [originalData, setOriginalData] = useState(null)
@@ -24,9 +24,9 @@ export default function App() {
 
   return (
     <div className="container">
-
-      <apiRQST />
-      <Navbar />
+      <div style={{ color: "#e5efff" }}>
+        <h1>hjbs</h1>
+      </div>
       <BlogInput onAnalyze={handleAnalyze} isdisabled={loading} />
 
       {loading && <Loadings over={true} />}
